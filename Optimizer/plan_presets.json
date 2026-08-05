@@ -1,0 +1,922 @@
+[
+  {
+    "name": "پیش فرض",
+    "data": {
+      "basePlan": {
+        "selectedRank": 1,
+        "criteria": [
+          {
+            "field": "repeat",
+            "dir": "desc"
+          },
+          {
+            "field": "totalCount",
+            "dir": "asc"
+          },
+          {
+            "field": "uniqueCount",
+            "dir": "asc"
+          },
+          {
+            "field": "total",
+            "dir": "desc"
+          }
+        ]
+      },
+      "plans": [
+        {
+          "id": "1778068821743",
+          "name": "طرح 1",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 3,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 5,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 6,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778068830184",
+          "name": "طرح 2",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 3,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778068841191",
+          "name": "طرح 3",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 2,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778155995702",
+          "name": "طرح 4",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778422281415",
+          "name": "طرح 5",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778568485528",
+          "name": "طرح 6",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "BOPP3-20 mic",
+    "data": {
+      "basePlan": {
+        "selectedRank": 1,
+        "criteria": [
+          {
+            "field": "repeat",
+            "dir": "desc"
+          },
+          {
+            "field": "total",
+            "dir": "desc"
+          },
+          {
+            "field": "totalCount",
+            "dir": "asc"
+          },
+          {
+            "field": "uniqueCount",
+            "dir": "asc"
+          }
+        ]
+      },
+      "plans": [
+        {
+          "id": "1778068821743",
+          "name": "طرح 1",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 5,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 6,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778068830184",
+          "name": "طرح 2",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778068841191",
+          "name": "طرح 3",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "desc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778155995702",
+          "name": "طرح 4",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778422281415",
+          "name": "طرح 5",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1778568485528",
+          "name": "طرح 6",
+          "rows": [
+            {
+              "step": 1,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 2,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 3,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 4,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                }
+              ]
+            },
+            {
+              "step": 5,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "desc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "desc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "desc"
+                }
+              ]
+            },
+            {
+              "step": 6,
+              "selectedRank": 1,
+              "criteria": [
+                {
+                  "field": "repeat",
+                  "dir": "desc"
+                },
+                {
+                  "field": "total",
+                  "dir": "asc"
+                },
+                {
+                  "field": "totalCount",
+                  "dir": "asc"
+                },
+                {
+                  "field": "uniqueCount",
+                  "dir": "asc"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,123 @@
+var SharedDB = (function() {
+  let fileHandle = null;
+  let cachedData = null;
+  let version = 0;
+  let refreshIntervalId = null;
+  let autoSaveTimeout = null;
+  let onNewDataCallback = null;
+
+  async function openFile() {
+    if (!window.showOpenFilePicker) {
+      throw new Error('مرورگر شما از File System Access API پشتیبانی نمی‌کند.');
+    }
+    const [handle] = await window.showOpenFilePicker({
+      types: [{ description: 'JSON Database', accept: { 'application/json': ['.json'] } }],
+      multiple: false
+    });
+    fileHandle = handle;
+    await LocalDB.saveFileHandle(handle);
+    await readFile();
+    return { handle: fileHandle, data: cachedData };
+  }
+
+  async function readFile() {
+    if (!fileHandle) throw new Error('فایلی باز نشده است.');
+    const file = await fileHandle.getFile();
+    const text = await file.text();
+    try {
+      const decrypted = await decryptData(text.trim());
+      cachedData = JSON.parse(decrypted);
+      version = cachedData.version || 0;
+    } catch (e) {
+      cachedData = null;
+      throw new Error('فایل دیتابیس آسیب دیده یا تغییر یافته است. لطفاً فایل اصلی را دوباره انتخاب کنید.');
+    }
+    return cachedData;
+  }
+
+  async function writeFile(data) {
+    if (!fileHandle) throw new Error('فایلی باز نشده است.');
+    data.version = (data.version || 0) + 1;
+    const plain = JSON.stringify(data, null, 2);
+    const encrypted = await encryptData(plain);
+    const writable = await fileHandle.createWritable();
+    await writable.write(encrypted);
+    await writable.close();
+    cachedData = data;
+    version = data.version;
+  }
+
+  async function openSharedDB() {
+    const storedHandle = await LocalDB.getFileHandle();
+    if (storedHandle) {
+      fileHandle = storedHandle;
+      try {
+        await readFile();
+        return { handle: fileHandle, data: cachedData };
+      } catch (e) {
+        fileHandle = null;
+        await LocalDB.saveFileHandle(null);
+        throw e;
+      }
+    }
+    return await openFile();
+  }
+
+  async function saveSharedDB(data) {
+    await writeFile(data);
+  }
+
+  function startAutoRefresh(intervalMs, onNewData) {
+    stopAutoRefresh();
+    onNewDataCallback = onNewData;
+    refreshIntervalId = setInterval(async () => {
+      if (!fileHandle) return;
+      try {
+        const remoteData = await readFile();
+        if (remoteData.version > version) {
+          version = remoteData.version;
+          cachedData = remoteData;
+          onNewDataCallback(cachedData);
+        }
+      } catch (e) {
+        console.warn('Auto-refresh failed:', e);
+        if (onNewDataCallback) onNewDataCallback(null, e);
+      }
+    }, intervalMs);
+  }
+
+  function stopAutoRefresh() {
+    if (refreshIntervalId) {
+      clearInterval(refreshIntervalId);
+      refreshIntervalId = null;
+    }
+  }
+
+  function scheduleSave(dataGetter, delayMs = 2000) {
+    if (autoSaveTimeout) clearTimeout(autoSaveTimeout);
+    autoSaveTimeout = setTimeout(async () => {
+      if (!fileHandle) return;
+      try {
+        const data = dataGetter();
+        await writeFile(data);
+      } catch (e) {
+        console.error('Auto-save failed:', e);
+      }
+    }, delayMs);
+  }
+
+  function getFileName() {
+    return fileHandle ? fileHandle.name : null;
+  }
+
+  return {
+    openSharedDB,
+    saveSharedDB,
+    readFile,
+    getCachedData: () => cachedData,
+    startAutoRefresh,
+    stopAutoRefresh,
+    scheduleSave,
+    getFileName
+  };
+})();

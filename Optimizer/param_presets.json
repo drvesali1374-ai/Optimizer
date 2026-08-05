@@ -1,0 +1,87 @@
+[
+  {
+    "name": "DMT",
+    "data": {
+      "filmType": "non-pearl",
+      "thickness": 20,
+      "standardLength": 20000,
+      "lowerLimit": 7960,
+      "upperLimit": 8020,
+      "maxArms": 10,
+      "maxTrim": 10,
+      "maxTime": 10,
+      "maxPieces": 10,
+      "timeoutSec": 10,
+      "maxResults": 50,
+      "replacementLowerDecrease": 20
+    }
+  },
+  {
+    "name": "CPP2",
+    "data": {
+      "filmType": "non-pearl",
+      "thickness": 25,
+      "standardLength": 16000,
+      "lowerLimit": 3620,
+      "upperLimit": 4100,
+      "maxArms": 6,
+      "maxTrim": 10,
+      "maxTime": 10,
+      "maxPieces": 10,
+      "timeoutSec": 10,
+      "maxResults": 50,
+      "replacementLowerDecrease": 20
+    }
+  },
+  {
+    "name": "BOPP1-20",
+    "data": {
+      "filmType": "non-pearl",
+      "thickness": 20,
+      "standardLength": 20000,
+      "lowerLimit": 6090,
+      "upperLimit": 6100,
+      "maxArms": 8,
+      "maxTrim": 10,
+      "maxTime": 10,
+      "maxPieces": 10,
+      "timeoutSec": 10,
+      "maxResults": 50,
+      "replacementLowerDecrease": 20
+    }
+  },
+  {
+    "name": "BOPP 3 - 20",
+    "data": {
+      "filmType": "non-pearl",
+      "thickness": 20,
+      "standardLength": 20000,
+      "lowerLimit": 6240,
+      "upperLimit": 6270,
+      "maxArms": 8,
+      "maxTrim": 10,
+      "maxTime": 10,
+      "maxPieces": 10,
+      "timeoutSec": 10,
+      "maxResults": 50,
+      "replacementLowerDecrease": 20
+    }
+  },
+  {
+    "name": "BOPP 3 -25",
+    "data": {
+      "filmType": "non-pearl",
+      "thickness": 25,
+      "standardLength": 16000,
+      "lowerLimit": 6240,
+      "upperLimit": 6270,
+      "maxArms": 5,
+      "maxTrim": 10,
+      "maxTime": 10,
+      "maxPieces": 10,
+      "timeoutSec": 10,
+      "maxResults": 50,
+      "replacementLowerDecrease": 20
+    }
+  }
+]
